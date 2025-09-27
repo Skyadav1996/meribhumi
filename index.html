@@ -3,25 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Bhumi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Meribhumi Common Service Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Meri Bhumi</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-handshake"></i> Meribhumi CSC</h1>
+                <p>Your Trusted Common Service Center</p>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a basic static website for Meri Bhumi.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Meri Bhumi. All rights reserved.</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>One Stop for All Government & Digital Services</h2>
+                <p>We provide comprehensive services including Aadhaar, PAN, Banking, Insurance, and much more. Fast, reliable, and affordable services for everyone.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number">10+</span>
+                        <span class="label">Services</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">5000+</span>
+                        <span class="label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">5★</span>
+                        <span class="label">Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive range of government and digital services</p>
+            
+            <div class="services-grid" id="servicesContainer">
+                <!-- Services will be loaded here dynamically -->
+            </div>
+
+            <div class="add-service">
+                <h3>Need another service?</h3>
+                <p>Contact us for any additional services not listed above</p>
+                <button class="btn-contact" onclick="contactUs()">
+                    <i class="fas fa-phone"></i> Contact Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our CSC</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Why Choose Meribhumi CSC?</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Government authorized service center</li>
+                        <li><i class="fas fa-check"></i> Experienced and trained staff</li>
+                        <li><i class="fas fa-check"></i> Fast and reliable service</li>
+                        <li><i class="fas fa-check"></i> Affordable pricing</li>
+                        <li><i class="fas fa-check"></i> Digital document storage</li>
+                        <li><i class="fas fa-check"></i> Home service available</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="info-card">
+                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
+                        <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                        <p>Sunday: 10:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Main Market, Meribhumi<br>Near Post Office</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 XXXXX XXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@meribhumi.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Meribhumi Common Service Center. All rights reserved.</p>
+        </div>
     </footer>
-    
-    <script src="script.js"></script>
+
+    <script>
+        // Services data - You can easily add more services here
+        const services = [
+            { id: 1, icon: 'fas fa-id-card', name: 'Aadhaar Services', description: 'Enrollment, Update, Correction' },
+            { id: 2, icon: 'fas fa-credit-card', name: 'PAN Card Services', description: 'New Application, Correction' },
+            { id: 3, icon: 'fas fa-university', name: 'Banking Services', description: 'Account Opening, Passbook' },
+            { id: 4, icon: 'fas fa-shield-alt', name: 'Insurance', description: 'Life, Health, Vehicle Insurance' },
+            { id: 5, icon: 'fas fa-bolt', name: 'Utility Bills', description: 'Electricity, Water, Gas Bills' },
+            { id: 6, icon: 'fas fa-mobile-alt', name: 'Mobile Recharge', description: 'Prepaid, Postpaid, DTH' },
+            { id: 7, icon: 'fas fa-train', name: 'Railway Booking', description: 'Ticket Reservation, Cancellation' },
+            { id: 8, icon: 'fas fa-bus', name: 'Bus Booking', description: 'State & Private Bus Tickets' },
+            { id: 9, icon: 'fas fa-passport', name: 'Passport Services', description: 'Application Assistance' },
+            { id: 10, icon: 'fas fa-file-contract', name: 'Document Services', description: 'Printing, Scanning, Xerox' },
+            { id: 11, icon: 'fas fa-graduation-cap', name: 'Education Services', description: 'Form Filling, Admission' },
+            { id: 12, icon: 'fas fa-heartbeat', name: 'Health Services', description: 'Appointment, Health Cards' }
+        ];
+
+        // Function to display services
+        function displayServices() {
+            const container = document.getElementById('servicesContainer');
+            container.innerHTML = services.map(service => `
+                <div class="service-box" onclick="showServiceDetails(${service.id})">
+                    <div class="service-icon">
+                        <i class="${service.icon}"></i>
+                    </div>
+                    <h3>${service.name}</h3>
+                    <p>${service.description}</p>
+                    <span class="service-btn">Learn More <i class="fas fa-arrow-right"></i></span>
+                </div>
+            `).join('');
+        }
+
+        // Function to show service details
+        function showServiceDetails(serviceId) {
+            const service = services.find(s => s.id === serviceId);
+            alert(`Service: ${service.name}\nDescription: ${service.description}\n\nContact us for more details!`);
+        }
+
+        // Function to contact us
+        function contactUs() {
+            alert('Please call us at +91 XXXXX XXXXX or visit our center for any additional services!');
+        }
+
+        // Initialize services when page loads
+        document.addEventListener('DOMContentLoaded', displayServices);
+    </script>
 </body>
 </html>
