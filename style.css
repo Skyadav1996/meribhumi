@@ -110,18 +110,11 @@ body {
     background: white;
 }
 
-.section-title {
+.services h2 {
     text-align: center;
     font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #666;
     margin-bottom: 3rem;
+    color: #2c3e50;
 }
 
 .services-grid {
@@ -131,7 +124,7 @@ body {
     margin-bottom: 50px;
 }
 
-.service-box {
+.service-card {
     background: #f8f9fa;
     padding: 30px;
     border-radius: 10px;
@@ -141,70 +134,27 @@ body {
     cursor: pointer;
 }
 
-.service-box:hover {
+.service-card:hover {
     transform: translateY(-5px);
     border-color: #3498db;
     box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
 }
 
-.service-icon {
-    width: 70px;
-    height: 70px;
-    background: #3498db;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    color: white;
-    font-size: 1.8rem;
+.service-card i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
 }
 
-.service-box h3 {
+.service-card h3 {
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     color: #2c3e50;
 }
 
-.service-box p {
+.service-card p {
     color: #666;
     margin-bottom: 20px;
-}
-
-.service-btn {
-    display: inline-block;
-    color: #3498db;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.service-box:hover .service-btn {
-    transform: translateX(5px);
-}
-
-/* Add Service Section */
-.add-service {
-    text-align: center;
-    padding: 40px;
-    background: #f1f2f6;
-    border-radius: 10px;
-}
-
-.btn-contact {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 1rem;
-}
-
-.btn-contact:hover {
-    background: #c0392b;
-    transform: scale(1.05);
 }
 
 /* About Section */
@@ -213,48 +163,54 @@ body {
     background: #f8f9fa;
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.about-text h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+.about h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
     color: #2c3e50;
 }
 
-.about-text ul {
-    list-style: none;
-}
-
-.about-text li {
-    margin-bottom: 1rem;
+.about p {
+    text-align: center;
     font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #666;
 }
 
-.about-text li i {
-    color: #27ae60;
-    margin-right: 10px;
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-.info-card {
+.feature {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.info-card h4 {
-    color: #2c3e50;
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #3498db;
     margin-bottom: 1rem;
 }
 
-.info-card h4 i {
-    color: #3498db;
-    margin-right: 10px;
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.feature p {
+    color: #666;
 }
 
 /* Contact Section */
@@ -263,78 +219,135 @@ body {
     background: white;
 }
 
-.contact-content {
+.contact h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+    text-align: center;
+    padding: 20px;
 }
 
 .contact-item i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #3498db;
-    margin-right: 1rem;
-    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.contact-item p {
+    color: #666;
 }
 
 /* Footer */
 .footer {
     background: #2c3e50;
     color: white;
-    text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
-/* Responsive Design - Mobile Styles */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+.footer-section p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #34495e;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
         text-align: center;
     }
-
+    
     .nav {
         margin-top: 1rem;
     }
-
+    
     .nav a {
         margin: 0 1rem;
     }
-
+    
     .hero {
         padding: 100px 0 60px;
     }
-
+    
     .hero h2 {
         font-size: 2rem;
     }
-
+    
     .hero-stats {
         flex-direction: column;
         gap: 1.5rem;
     }
-
+    
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
     }
-
-    .about-content {
+    
+    .features {
         grid-template-columns: 1fr;
-        gap: 30px;
     }
-
-    .contact-content {
+    
+    .contact-info {
         grid-template-columns: 1fr;
-        gap: 30px;
     }
-
-    .section-title {
-        font-size: 1.8rem;
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
 
@@ -342,19 +355,24 @@ body {
     .container {
         padding: 0 15px;
     }
-
+    
     .hero h2 {
         font-size: 1.6rem;
     }
-
-    .service-box {
+    
+    .service-card, .feature {
         padding: 20px;
     }
-
+    
     .nav a {
         margin: 0 0.5rem;
         font-size: 0.9rem;
     }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Animations */
@@ -369,11 +387,6 @@ body {
     }
 }
 
-.service-box {
+.service-card, .feature {
     animation: fadeInUp 0.6s ease-out;
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
 }
