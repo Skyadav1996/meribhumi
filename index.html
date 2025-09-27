@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meribhumi Common Service Center</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -36,12 +36,12 @@
                         <span class="label">Services</span>
                     </div>
                     <div class="stat">
-                        <span class="number">5000+</span>
+                        <span class="number">1000+</span>
                         <span class="label">Happy Customers</span>
                     </div>
                     <div class="stat">
-                        <span class="number">5★</span>
-                        <span class="label">Rating</span>
+                        <span class="number">24/7</span>
+                        <span class="label">Support</span>
                     </div>
                 </div>
             </div>
@@ -51,19 +51,38 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Comprehensive range of government and digital services</p>
-            
-            <div class="services-grid" id="servicesContainer">
-                <!-- Services will be loaded here dynamically -->
-            </div>
-
-            <div class="add-service">
-                <h3>Need another service?</h3>
-                <p>Contact us for any additional services not listed above</p>
-                <button class="btn-contact" onclick="contactUs()">
-                    <i class="fas fa-phone"></i> Contact Us
-                </button>
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Aadhaar Services</h3>
+                    <p>New enrollment, updates, and corrections</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>PAN Card</h3>
+                    <p>New PAN application and corrections</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-university"></i>
+                    <h3>Banking Services</h3>
+                    <p>Account opening and money transfer</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Insurance</h3>
+                    <p>Life, health, and vehicle insurance</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Certificates</h3>
+                    <p>Birth, death, and income certificates</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Digital Services</h3>
+                    <p>Online applications and e-services</p>
+                </div>
             </div>
         </div>
     </section>
@@ -71,25 +90,23 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Our CSC</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Why Choose Meribhumi CSC?</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Government authorized service center</li>
-                        <li><i class="fas fa-check"></i> Experienced and trained staff</li>
-                        <li><i class="fas fa-check"></i> Fast and reliable service</li>
-                        <li><i class="fas fa-check"></i> Affordable pricing</li>
-                        <li><i class="fas fa-check"></i> Digital document storage</li>
-                        <li><i class="fas fa-check"></i> Home service available</li>
-                    </ul>
+            <h2>About Meribhumi CSC</h2>
+            <p>We are a trusted Common Service Center providing essential government and digital services to rural and urban communities. Our mission is to bridge the digital divide and make government services accessible to everyone.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Quick Service</h3>
+                    <p>Fast processing of all applications</p>
                 </div>
-                <div class="about-image">
-                    <div class="info-card">
-                        <h4><i class="fas fa-clock"></i> Business Hours</h4>
-                        <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
-                        <p>Sunday: 10:00 AM - 2:00 PM</p>
-                    </div>
+                <div class="feature">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Affordable Rates</h3>
+                    <p>Competitive pricing for all services</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Support</h3>
+                    <p>Trained professionals to assist you</p>
                 </div>
             </div>
         </div>
@@ -98,30 +115,27 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>Main Market, Meribhumi<br>Near Post Office</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 XXXXX XXXXX</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@meribhumi.com</p>
-                        </div>
-                    </div>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>Village: Meribhumi, District: Your District, State: Your State</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 XXXXXXXXXX</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>contact@meribhumicsc.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
                 </div>
             </div>
         </div>
@@ -130,55 +144,34 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Meribhumi Common Service Center. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Meribhumi CSC</h3>
+                    <p>Your trusted partner for all government and digital services.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Aadhaar Services</li>
+                        <li>PAN Card</li>
+                        <li>Banking</li>
+                        <li>Insurance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Meribhumi CSC. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <script>
-        // Services data - You can easily add more services here
-        const services = [
-            { id: 1, icon: 'fas fa-id-card', name: 'Aadhaar Services', description: 'Enrollment, Update, Correction' },
-            { id: 2, icon: 'fas fa-credit-card', name: 'PAN Card Services', description: 'New Application, Correction' },
-            { id: 3, icon: 'fas fa-university', name: 'Banking Services', description: 'Account Opening, Passbook' },
-            { id: 4, icon: 'fas fa-shield-alt', name: 'Insurance', description: 'Life, Health, Vehicle Insurance' },
-            { id: 5, icon: 'fas fa-bolt', name: 'Utility Bills', description: 'Electricity, Water, Gas Bills' },
-            { id: 6, icon: 'fas fa-mobile-alt', name: 'Mobile Recharge', description: 'Prepaid, Postpaid, DTH' },
-            { id: 7, icon: 'fas fa-train', name: 'Railway Booking', description: 'Ticket Reservation, Cancellation' },
-            { id: 8, icon: 'fas fa-bus', name: 'Bus Booking', description: 'State & Private Bus Tickets' },
-            { id: 9, icon: 'fas fa-passport', name: 'Passport Services', description: 'Application Assistance' },
-            { id: 10, icon: 'fas fa-file-contract', name: 'Document Services', description: 'Printing, Scanning, Xerox' },
-            { id: 11, icon: 'fas fa-graduation-cap', name: 'Education Services', description: 'Form Filling, Admission' },
-            { id: 12, icon: 'fas fa-heartbeat', name: 'Health Services', description: 'Appointment, Health Cards' }
-        ];
-
-        // Function to display services
-        function displayServices() {
-            const container = document.getElementById('servicesContainer');
-            container.innerHTML = services.map(service => `
-                <div class="service-box" onclick="showServiceDetails(${service.id})">
-                    <div class="service-icon">
-                        <i class="${service.icon}"></i>
-                    </div>
-                    <h3>${service.name}</h3>
-                    <p>${service.description}</p>
-                    <span class="service-btn">Learn More <i class="fas fa-arrow-right"></i></span>
-                </div>
-            `).join('');
-        }
-
-        // Function to show service details
-        function showServiceDetails(serviceId) {
-            const service = services.find(s => s.id === serviceId);
-            alert(`Service: ${service.name}\nDescription: ${service.description}\n\nContact us for more details!`);
-        }
-
-        // Function to contact us
-        function contactUs() {
-            alert('Please call us at +91 XXXXX XXXXX or visit our center for any additional services!');
-        }
-
-        // Initialize services when page loads
-        document.addEventListener('DOMContentLoaded', displayServices);
-    </script>
 </body>
 </html>
